@@ -1,0 +1,49 @@
+﻿<Window x:Class="SetFidu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SetFidu"
+        
+        xmlns:WinFormHost="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        xmlns:WinFormControls="clr-namespace:Emgu.CV.UI;assembly=Emgu.CV.UI"                 
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="776.188" Width="991.902">
+
+
+
+
+
+
+
+    <Grid Margin="-21,0,1,0">
+
+        <WindowsFormsHost Name="wfhSample" Margin="29,10,75,165">
+
+            <wf:PictureBox x:Name="PicBox" BackColor="black"  SizeMode="AutoSize" MouseMove="PicBox_MouseMove">
+
+            </wf:PictureBox>
+
+        </WindowsFormsHost>
+
+
+        <Button x:Name="btnTry" Content="Try" 
+                HorizontalAlignment="Left"
+                Margin="934,10,0,0" VerticalAlignment="Top" 
+                Height="22" Width="60"
+                Click="btnTry_Click"/>
+
+        <Label x:Name="lblFindMatchScore" Content="Label" 
+               HorizontalAlignment="Left" 
+               Margin="29,601,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.517,0.825" Width="501"/>
+
+        <Label x:Name="lblXY" Content="X:0 Y:0" 
+               HorizontalAlignment="Left" 
+               Margin="31,651,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.517,0.825" Width="501"/>
+
+
+    </Grid>
+</Window>
+    
+
